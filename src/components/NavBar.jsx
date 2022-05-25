@@ -1,5 +1,6 @@
-import { Container, Navbar,Nav,NavDropdown } from 'react-bootstrap';
+import { Container, Navbar,Nav} from 'react-bootstrap';
 import aqua_logo from '../images/aqua-logo.svg';
+import CartWidget from './CartWidget';
 
 
 const NavBar = () =>{
@@ -16,17 +17,14 @@ const NavBar = () =>{
                />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-              </NavDropdown>
+          <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
+            <Nav >
+              <Nav.Link className='px-3' href="#Tazas">Tazas</Nav.Link>
+              <Nav.Link className='px-3' href="#Vasos">Vasos</Nav.Link>
+              <Nav.Link className='px-3' href='#uadernos'>Cuadernos</Nav.Link>
+              <Nav.Link className='px-3' href='#Lapiceros'>Lapiceros</Nav.Link>
+              <Nav.Link className='px-3' href='#Mousepads'>Mousepads</Nav.Link>
+              <Nav.Link className='px-3' href='#Cart'><CartWidget /></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
