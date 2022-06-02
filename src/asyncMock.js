@@ -4,7 +4,7 @@ const products =[
         name: 'Taza de ceramica',
         price: 5,
         category: 'Tazas',
-        img: './images/placeholder-images.png',
+        img: 'images/placeholder-img.png',
         stock: 100,
         description: 'Descripcion de Taza de ceramica'
     },
@@ -13,7 +13,7 @@ const products =[
         name: 'Vaso de cafe',
         price: 3,
         category: 'Vasos',
-        img: './images/placeholder-images.png',
+        img: 'images/placeholder-img.png',
         stock: 100,
         description: 'Descripcion de vaso de cafe'
     },
@@ -22,7 +22,7 @@ const products =[
         name: 'Cuaderno tapa dura mediano',
         price: 6,
         category: 'Cuadernos',
-        img: './images/placeholder-images.png',
+        img: 'images/placeholder-img.png',
         stock:100,
         description: 'Descripcion de cuaderno tapa dura mediano'
     },
@@ -31,7 +31,7 @@ const products =[
         name: 'Lapicero Plastico',
         price: 2,
         category: 'Lapiceros',
-        img: './images/placeholder-images.png',
+        img: 'images/placeholder-img.png',
         stock:100,
         description: 'Descripcion de lapicero plastico'
     },
@@ -40,7 +40,7 @@ const products =[
         name: 'Mousepad de microfibra',
         price: 4,
         category: 'Mousepads',
-        img: './images/placeholder-images.png',
+        img: 'images/placeholder-img.png',
         stock:100,
         description: 'Descripcion de mousepad de microfibra'
     }

@@ -1,5 +1,4 @@
 import { Container, Navbar,Nav} from 'react-bootstrap';
-import aqua_logo from '../images/aqua-logo.svg';
 import CartWidget from './CartWidget';
 
 
@@ -10,7 +9,7 @@ const NavBar = () =>{
         <Container>
           <Navbar.Brand>
               <img 
-                src={aqua_logo}
+                src='images/aqua-logo.svg'
                 height='44'
                 width='106'
                 alt='AquaDot logo'
