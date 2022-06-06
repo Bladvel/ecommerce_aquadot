@@ -1,7 +1,9 @@
+import cart_widget from '../cart.svg'
+
 const CartWidget = () =>{
 
     return (
-        <img src='images/cart.svg' alt="shopping cart" />
+        <img src={cart_widget} alt="shopping cart" />
     )
 
 }
