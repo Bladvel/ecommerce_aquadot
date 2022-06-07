@@ -2,3 +2,114 @@
     width: 14.875rem;
     height: 13rem;
 }
+
+.btnCounter{
+
+    width: 44px;
+    height: 44px;
+    background: #006069;
+    border-radius: 100px;
+    border-width: 0;
+    position: absolute;
+
+}
+
+.btnCounteLeft{
+    left: 2px;
+    top: 2px;
+}
+
+.btnCounteRight{
+    left: 218px;
+     top: 2px;
+
+}
+
+.btnContentPlus{
+    position: absolute;
+    left: 14px;
+    top: 14px;
+}
+
+.plusSign{
+    width: 16px;
+    height: 16px;
+}
+
+.btnContentMinus{
+    position: absolute;
+    left: 15px;
+     top: 22px;
+}
+
+.minusSign{
+    width: 14px;
+}
+
+.counterContainer{
+    width: 264px;
+    height: 48px;
+    background: #EDEDED;
+    /* MAIN */
+
+    border: 0.5px solid #006069;
+    border-radius: 24px;
+    position: relative;
+}
+
+.text-regular{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #1D1C1C;
+    position: absolute;
+    width: 25px;
+    height: 28px;
+    left: 119px;
+    top: 10px;
+
+
+}
+
+.imgDetail{
+    width: 549px;
+    height: 549px;
+}
+
+.productTitle{
+    /* M3/display/medium */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 45px;
+line-height: 52px;
+/* identical to box height, or 116% */
+
+display: flex;
+align-items: center;
+
+/* Grey1 */
+
+color: #1D1C1C;
+}
+
+.productDescription-title{
+    /* M3/title/large */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+/* identical to box height, or 127% */
+
+display: flex;
+align-items: center;
+
+/* MAIN */
+
+color: #006069;
+}

@@ -1,5 +1,4 @@
 import { Card } from "react-bootstrap"
-import '../styles/styles.css'
 import { Link, useParams } from "react-router-dom"
 
 const Item = ({id, name, price, img, description}) => {
@@ -15,9 +14,9 @@ const Item = ({id, name, price, img, description}) => {
             <Card.Body>
                 <Card.Title className="text-start">{name}</Card.Title>
                 <Card.Subtitle className=" text-start mb-2 text-muted">${price} </Card.Subtitle>
-                <Card.Text className="text-start">
+                {/* <Card.Text className="text-start">
                     {description}
-                </Card.Text>
+                </Card.Text> */}
 
                 <Link to={`/detail/${id}`} className="btn btn-primary">
                     Ver mas detalles
@@ -35,9 +34,9 @@ const Item = ({id, name, price, img, description}) => {
             <Card.Body >
                 <Card.Title className="text-start">{name}</Card.Title>
                 <Card.Subtitle className=" text-start mb-2 text-muted">${price} </Card.Subtitle>
-                <Card.Text className="text-start">
+                {/* <Card.Text className="text-start">
                     {description}
-                </Card.Text>
+                </Card.Text> */}
                 <Link to={`/detail/${id}`} className="btn btn-primary">
                     Ver mas detalles
                 </Link>

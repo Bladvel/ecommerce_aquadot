@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import plusSign from '../plus.svg'
+import minusSign from '../minus.svg'
+
 
 const Counter = ({initial, stock}) =>{
     const [count, setCount] = useState(initial)
 
     const decrement = () => {
-        setCount(prev => prev - 1)
+        count > 0 && setCount(prev => prev - 1)
     }
 
     const increment = () => {
@@ -12,13 +15,12 @@ const Counter = ({initial, stock}) =>{
     }
 
     return(
-        <>
-            <button onClick={decrement}>-</button>
-                <h2>{count}</h2>
-            <button onClick={increment}>+</button>
-            
-            <button>Agregar carrito</button>
-        </>
+        <div className='counterContainer'>
+            <button onClick={decrement} className="btnCounter btnCounteRight"><img src={minusSign} alt="minus sign" className='btnContentMinus minusSign'/></button>
+                <span className='text-regular'>{count}</span>
+            <button onClick={increment} className="btnCounter  btnCounteLeft"><img src={plusSign} alt="plus sign" className='btnContentPlus plusSign'/></button>
+        </div>
+  
     )
 
 }
