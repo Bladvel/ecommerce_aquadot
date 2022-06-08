@@ -3,21 +3,24 @@ import { Container, Row, Col } from "react-bootstrap"
 
 const ItemDetail = ({product}) =>{
     return (
-        <Container>
+        <Container className="mt-5">
             <Row>
                 <Col>
                     <img src={`../${product.img}`} alt="" className="imgDetail" />
                 </Col>
                 <Col>
                     <h1 className="productTitle">{product.name}</h1>
-                    <h2 className="productDescription-title">Descripcion</h2>
-                    <h2>${product.price}</h2>
-                    <h2>Stock: {product.stock}</h2>
-                    {product.description}
+                    <h2 className="productDescription-title">Descripción</h2>
+                    <p className="productDescription">{product.description}</p>
+                    <h2 className="productDescription-title">Precio</h2>
+                    <p className="productPrice">${product.price}</p>
+                    <h2 className="productDescription-title">Stock</h2>
+                    <p className="productPrice">{product.stock} unidades</p>
+                    <h2 className="productDescription-title">Cantidad</h2>
                     
                     <Counter initial={1} stock={product.stock}/>
                     <br />
-                    <button>Agregar carrito</button>
+                    <button className="btnAgregarAlCarrito"><span className="textCarrito">Agregar carrito</span></button>
                 </Col>
                 
             </Row>
