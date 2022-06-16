@@ -27,7 +27,9 @@ const ItemListContainer = () => {
 
     if(loading) {
         return (
-            <div class="loader"></div>
+            <div className="loader-container">
+                <div class="loader"></div>
+            </div> 
         ) 
     }
     
