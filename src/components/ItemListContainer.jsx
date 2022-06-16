@@ -14,23 +14,14 @@ const ItemListContainer = () => {
     useEffect(() => {
         setLoading(true)
 
-        if(!categoryId) {
-            getProducts().then(res => {
-                setProducts(res)
-            }).catch(error => {
-                console.log(error)
-            }).finally(() => {
-                setLoading(false)
-            })
-        } else {
-            getProductsByCategory(categoryId).then(res => {
-                setProducts(res)
-            }).catch(error => {
-                console.log(error)
-            }).finally(() => {
-                setLoading(false)
-            })
-        }
+        getProducts(categoryId).then(res => {
+            setProducts(res)
+        }).catch(error => {
+            console.log(error)
+        }).finally(() => {
+            setLoading(false)
+        })
+    
         
     }, [categoryId])
 
