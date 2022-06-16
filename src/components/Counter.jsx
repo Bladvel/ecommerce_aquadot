@@ -3,7 +3,7 @@ import plusSign from '../plus.svg'
 import minusSign from '../minus.svg'
 
 
-const Counter = ({initial, stock}) =>{
+const Counter = ({initial, stock, onAdd}) =>{
     const [count, setCount] = useState(initial)
 
     const decrement = () => {
@@ -15,11 +15,16 @@ const Counter = ({initial, stock}) =>{
     }
 
     return(
-        <div className='counterContainer'>
-            <button onClick={decrement} className="btnCounter btnCounteRight"><img src={minusSign} alt="minus sign" className='btnContentMinus minusSign'/></button>
-                <span className='text-regular'>{count}</span>
-            <button onClick={increment} className="btnCounter  btnCounteLeft"><img src={plusSign} alt="plus sign" className='btnContentPlus plusSign'/></button>
-        </div>
+        <>
+            <div className='counterContainer'>
+                <button onClick={decrement} className="btnCounter btnCounteRight"><img src={minusSign} alt="minus sign" className='btnContentMinus minusSign'/></button>
+                    <span className='text-regular'>{count}</span>
+                <button onClick={increment} className="btnCounter  btnCounteLeft"><img src={plusSign} alt="plus sign" className='btnContentPlus plusSign'/></button>
+            </div>
+            <br />
+            <button className="btnAgregarAlCarrito" onClick={() => onAdd(count)}><span className="textCarrito">Agregar carrito</span></button>
+        </>
+        
   
     )
 

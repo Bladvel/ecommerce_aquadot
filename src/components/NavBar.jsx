@@ -48,7 +48,12 @@ const NavBar = () =>{
                   Mousepads
                 </NavLink>
               </Nav.Link>
-              <Nav.Link className='px-3' href='category/Cart'><CartWidget /></Nav.Link>
+              <Nav.Link className='px-3'>
+                <NavLink to='/cart' className={'nav-link'}>
+                  <CartWidget />
+                </NavLink>
+                
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

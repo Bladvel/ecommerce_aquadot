@@ -1,7 +1,7 @@
 import { Card } from "react-bootstrap"
 import { Link, useParams } from "react-router-dom"
 
-const Item = ({id, name, price, img, description}) => {
+const Item = ({id, name, price, img}) => {
     
     const { categoryId } = useParams()
 
