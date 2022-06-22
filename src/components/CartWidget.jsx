@@ -5,6 +5,9 @@ import { useContext } from 'react'
 const CartWidget = () =>{
 
     const {totalQuantity} = useContext(CartContext)
+    
+    if(totalQuantity === 0) return
+    
     return (
         <div>
             <img src={cart_widget} alt="shopping cart" />
