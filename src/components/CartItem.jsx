@@ -2,7 +2,7 @@ import { Col } from "react-bootstrap"
 import { useContext } from "react"
 import CartContext from "../context/CartContext"
 
-const CartItem = ({id, name, price, quantity}) =>{
+const CartItem = ({id, name, price,img, quantity}) =>{
 
     const {removeItem} = useContext(CartContext)
     const handleRemove = (id) =>{
@@ -10,14 +10,23 @@ const CartItem = ({id, name, price, quantity}) =>{
     }
 
     return(
-            <Col>
-                <span>Producto: {name} </span>
-                <span>Cantidad: {quantity} </span>
-                <span>Precio unitario: ${price} </span>
-                <span>Subtotal: ${price*quantity} </span>
-                <button className="btn btn-danger" onClick={() => handleRemove(id)}>Eliminar</button>
-            </Col>
+            <>
+                <Col className="w-auto">
+                    <img src={`../${img}`} alt="" className="cartImgDetail" />
+                </Col>
+                <Col>
+                    <p className="cartItem-title text-start">{name}</p>
+                    <p className="cartItem-detail">Precio: ${price} </p>
+                    <p className="cartItem-detail">Cantidad: {quantity} </p>
+                    <p className="cartItem-detail">Subtotal: ${price*quantity} </p>
+                    
+                </Col>
+                <Col>
+                    <button className="btn btn-danger" onClick={() => handleRemove(id)}>Eliminar</button>
+                </Col>
+            </>
     )
+            
     
 
 }

@@ -2,6 +2,7 @@ import { useContext } from "react"
 import CartContext from "../context/CartContext"
 import { Link } from "react-router-dom"
 import CartList from "./CartList"
+import { Container, Row, Col } from "react-bootstrap"
 
 const Cart = () =>{
 const {cart,totalQuantity, totalPrice, clear} = useContext(CartContext)
@@ -16,14 +17,39 @@ const {cart,totalQuantity, totalPrice, clear} = useContext(CartContext)
 
     return (
         <>
-            <h1>CART</h1>
+            <h1 className="cartTitle m-5">Carrito de compras</h1>
             <CartList products={cart}/>
+            <Container>
+                <Row>
+                    <Col className="cartDetail-name">
+                        <span>Cantidad de productos:</span>  
+                    </Col>
+                    <Col className="cartDetail-value">
+                        <span>{totalQuantity}</span>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className="cartDetail-name">
+                        <span>Total:</span>  
+                    </Col>
+                    <Col className="cartDetail-value">
+                        <span>${totalPrice}</span>
+                    </Col>
+                </Row>
+                
+                <Row>
+                    <Col>
+                        <button className="btn btn-primary m-3" >Crear Orden</button>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <button className="btn btn-secondary" onClick={clear}>Vaciar Carrito</button>
+                    </Col>
+                </Row>
+            </Container>
+
             
-            <h2>Cantidad de productos: {totalQuantity}</h2>
-            <h2>Total: ${totalPrice}</h2>
-            <button className="btn btn-primary m-3" >Crear Orden</button>
-            <br />
-            <button className="btn btn-secondary" onClick={clear}>Vaciar Carrito</button>
         </>
     )
 }

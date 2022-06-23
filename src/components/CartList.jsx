@@ -10,6 +10,7 @@ const CartList = ({products}) =>{
                 return(
                     <Row>
                         <CartItem key={product.id} {...product} />
+                        <hr className="m-3 line"/>
                     </Row>
                 )
                 

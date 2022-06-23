@@ -224,3 +224,97 @@ color: #F7FFF7;
     align-items: center;
     justify-content: center
 }
+
+.cartItem-title{
+    /* M3/headline/large */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+
+display: flex;
+align-items: center;
+
+/* MAIN */
+
+color: #006069;
+}
+
+.cartItem-detail{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.1px;
+
+/* Grey1 */
+
+color: #1D1C1C;
+}
+
+.cartImgDetail{
+    width: 168px;
+    height: 168px;
+    object-fit: cover;
+}
+
+.cartTitle{
+/* M3/display/medium */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 45px;
+line-height: 52px;
+/* identical to box height, or 116% */
+
+
+
+/* Grey1 */
+
+color: #1D1C1C;
+}
+
+.line{
+    border: 1px solid #EDEDED; 
+}
+
+.cartDetail-name{
+    text-align: start;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+
+
+/* Grey1 */
+
+color: #1D1C1C;
+}
+
+.cartDetail-value{
+    text-align: end;
+    /* M3/headline/large */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+
+
+
+/* Grey1 */
+
+color: #1D1C1C;
+}
