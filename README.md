@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Es una simulacion de una tienda de productos promocionales, estilizada en parte de react-bootstrap y bootstrap clasico.
 
-![ecommercNavegabilidad](https://user-images.githubusercontent.com/49488796/172525335-82f3d574-c96d-4ad7-92b0-30ed5b5aa50c.gif)
+![React App - Google Chrome 2022-06-28 20-10-37](https://user-images.githubusercontent.com/49488796/176319378-2ff9ba03-4fb8-4409-af7a-07bab39e5e68.gif)
 
 
 ## Available Scripts
