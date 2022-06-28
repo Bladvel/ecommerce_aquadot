@@ -10,18 +10,10 @@ const ItemListContainer = () => {
     const [loading, setLoading] = useState(true)
 
     const { categoryId } = useParams()
-    console.log(categoryId)
+
 
     useEffect(() => {
         setLoading(true)
-
-        // getProducts(categoryId).then(res => {
-        //     setProducts(res)
-        // }).catch(error => {
-        //     console.log(error)
-        // }).finally(() => {
-        //     setLoading(false)
-        // })
 
         const collectionRef = categoryId ? ( 
             query(collection(db, 'products'), where('category', '==', categoryId))
@@ -44,7 +36,7 @@ const ItemListContainer = () => {
     if(loading) {
         return (
             <div className="loader-container">
-                <div class="loader"></div>
+                <div className="loader"></div>
             </div> 
         ) 
     }

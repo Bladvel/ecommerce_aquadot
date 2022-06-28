@@ -5,7 +5,9 @@ import CartList from "./CartList"
 import { Container, Row, Col } from "react-bootstrap"
 
 const Cart = () =>{
-const {cart,totalQuantity, totalPrice, clear} = useContext(CartContext)
+    
+    const {cart,totalQuantity, totalPrice, clear} = useContext(CartContext)
+
 
     if(totalQuantity === 0)
         return (
@@ -39,7 +41,7 @@ const {cart,totalQuantity, totalPrice, clear} = useContext(CartContext)
                 
                 <Row>
                     <Col>
-                        <button className="btn btn-primary m-3" >Crear Orden</button>
+                        <Link to='/Checkout' className="btn btn-primary m-3"> Checkout</Link>
                     </Col>
                 </Row>
                 <Row>
