@@ -34,7 +34,7 @@ const ItemDetail = ({id, name, price, img, stock, description}) =>{
                     <h2 className="productDescription-title">Cantidad</h2>
                     { quantityAdded === 0 
                         ?   <Counter initial={1} stock={stock} onAdd={handleOnAdd}/>
-                        :   <Link to='ecommerce_aquadot/cart'>Terminar compra</Link>
+                        :   <Link to='/ecommerce_aquadot/cart'>Terminar compra</Link>
                     }
                     
                     
