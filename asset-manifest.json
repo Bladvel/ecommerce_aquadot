@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecommerce_aquadot/static/css/main.8738c995.css",
-    "main.js": "/ecommerce_aquadot/static/js/main.64de568e.js",
+    "main.js": "/ecommerce_aquadot/static/js/main.b649512d.js",
     "static/js/787.19e7a4a2.chunk.js": "/ecommerce_aquadot/static/js/787.19e7a4a2.chunk.js",
     "static/media/aqua-logo.svg": "/ecommerce_aquadot/static/media/aqua-logo.99a5379b3bd2fe88b2b4ccad3ce16a05.svg",
     "static/media/cart.svg": "/ecommerce_aquadot/static/media/cart.7b9a7dad375b7a8fc40384251a5fa18e.svg",
@@ -9,11 +9,11 @@
     "static/media/plus.svg": "/ecommerce_aquadot/static/media/plus.1124d760f60fa9a1bfefea37a233be5c.svg",
     "static/media/minus.svg": "/ecommerce_aquadot/static/media/minus.f8b48bac43e841107f013968b74ab691.svg",
     "main.8738c995.css.map": "/ecommerce_aquadot/static/css/main.8738c995.css.map",
-    "main.64de568e.js.map": "/ecommerce_aquadot/static/js/main.64de568e.js.map",
+    "main.b649512d.js.map": "/ecommerce_aquadot/static/js/main.b649512d.js.map",
     "787.19e7a4a2.chunk.js.map": "/ecommerce_aquadot/static/js/787.19e7a4a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8738c995.css",
-    "static/js/main.64de568e.js"
+    "static/js/main.b649512d.js"
   ]
 }
