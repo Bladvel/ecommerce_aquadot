@@ -17,11 +17,11 @@ function App() {
           <NavBar/>
 
           <Routes>
-            <Route path='/' element={<ItemListContainer />} />
-            <Route path='/category/:categoryId' element={<ItemListContainer />} />
-            <Route path='/detail/:productId' element={<ItemDetailContainer />} />
-            <Route path='/cart' element={<Cart/>} />
-            <Route path='/checkout' element={<Checkout />} />
+            <Route path='/ecommerce_aquadot' element={<ItemListContainer />} />
+            <Route path='/ecommerce_aquadot/category/:categoryId' element={<ItemListContainer />} />
+            <Route path='/ecommerce_aquadot/detail/:productId' element={<ItemDetailContainer />} />
+            <Route path='/ecommerce_aquadot/cart' element={<Cart/>} />
+            <Route path='/ecommerce_aquadot/checkout' element={<Checkout />} />
           </Routes>
         </BrowserRouter>
       </CartProvider>

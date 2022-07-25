@@ -10,7 +10,7 @@ const NavBar = () =>{
         <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand>
-            <Link to='/'>
+            <Link to='/ecommerce_aquadot'>
               <img 
                   src={aqua_logo}
                   height='44'
@@ -24,32 +24,32 @@ const NavBar = () =>{
           <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
             <Nav >
               <Nav.Link className='px-3'>
-                <NavLink to='category/Tazas' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                <NavLink to='ecommerce_aquadot/category/Tazas' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                   Tazas
                 </NavLink>
               </Nav.Link>
               <Nav.Link className='px-3'>
-                <NavLink to='category/Vasos' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                <NavLink to='ecommerce_aquadot/category/Vasos' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                   Vasos
                 </NavLink>
               </Nav.Link>
               <Nav.Link className='px-3'>
-                <NavLink to='category/Cuadernos' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                <NavLink to='ecommerce_aquadot/category/Cuadernos' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                   Cuadernos
                 </NavLink>
               </Nav.Link>
               <Nav.Link className='px-3'>
-                <NavLink to='category/Lapiceros' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                <NavLink to='ecommerce_aquadot/category/Lapiceros' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                   Lapiceros
                 </NavLink>
               </Nav.Link>
               <Nav.Link className='px-3'>
-                <NavLink to='category/Mousepads' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                <NavLink to='ecommerce_aquadot/category/Mousepads' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                   Mousepads
                 </NavLink>
               </Nav.Link>
               <Nav.Link className='px-3'>
-                <NavLink to='/cart' className={'nav-link'}>
+                <NavLink to='ecommerce_aquadot/cart' className={'nav-link'}>
                   <CartWidget />
                 </NavLink>
                 

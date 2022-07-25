@@ -13,7 +13,7 @@ const Cart = () =>{
         return (
             <>
                 <h1>El carrito esta vacio</h1>
-                <Link to='/'>Volver al inicio</Link>
+                <Link to='/ecommerce_aquadot'>Volver al inicio</Link>
             </>
         )
 
@@ -41,7 +41,7 @@ const Cart = () =>{
                 
                 <Row>
                     <Col>
-                        <Link to='/Checkout' className="btn btn-primary m-3"> Checkout</Link>
+                        <Link to='/ecommerce_aquadot/Checkout' className="btn btn-primary m-3"> Checkout</Link>
                     </Col>
                 </Row>
                 <Row>

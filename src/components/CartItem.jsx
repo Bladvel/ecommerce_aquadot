@@ -12,7 +12,7 @@ const CartItem = ({id, name, price,img, quantity}) =>{
     return(
             <>
                 <Col className="w-auto">
-                    <img src={`../${img}`} alt="" className="cartImgDetail" />
+                    <img src={img} alt="" className="cartImgDetail" />
                 </Col>
                 <Col>
                     <p className="cartItem-title text-start">{name}</p>

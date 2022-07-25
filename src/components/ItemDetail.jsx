@@ -21,7 +21,7 @@ const ItemDetail = ({id, name, price, img, stock, description}) =>{
         <Container className="mt-5">
             <Row>
                 <Col>
-                    <img src={`../${img}`} alt="" className="imgDetail" />
+                    <img src={img} alt="" className="imgDetail" />
                 </Col>
                 <Col>
                     <h1 className="productTitle">{name}</h1>
@@ -34,7 +34,7 @@ const ItemDetail = ({id, name, price, img, stock, description}) =>{
                     <h2 className="productDescription-title">Cantidad</h2>
                     { quantityAdded === 0 
                         ?   <Counter initial={1} stock={stock} onAdd={handleOnAdd}/>
-                        :   <Link to='/cart'>Terminar compra</Link>
+                        :   <Link to='ecommerce_aquadot/cart'>Terminar compra</Link>
                     }
                     
                     

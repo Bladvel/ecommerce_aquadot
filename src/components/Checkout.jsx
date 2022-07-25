@@ -14,7 +14,7 @@ const Checkout = ()=>{
         return (
             <>
                 <h1>Compra Finalizada</h1>
-                <Link to='/'>Volver al inicio</Link>
+                <Link to='/ecommerce_aquadot'>Volver al inicio</Link>
             </>
         )
 
